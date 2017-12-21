@@ -7889,5 +7889,8 @@ MediumEditor.version = MediumEditor.parseVersionString.call(this, ({
     'version': '5.23.3'
 }).version);
 
+    if (typeof module == 'object' && module.exports) {
+        module.exports = MediumEditor;
+    }
     return MediumEditor;
 }()));
